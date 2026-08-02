@@ -1,0 +1,337 @@
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+    --primary:#2563eb;
+    --secondary:#1e293b;
+    --background:#f4f4f4;
+    --white:#ffffff;
+    --text:#333333;
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:var(--secondary);
+}
+
+.logo{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    padding:60px 8%;
+    background:white;
+}
+
+.hero-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.hero-text h1{
+    font-size:45px;
+    color:var(--primary);
+    margin:10px 0;
+}
+
+.hero-text h3{
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    margin-bottom:25px;
+}
+
+.hero-image img{
+    width:280px;
+    border-radius:50%;
+    border:5px solid var(--primary);
+}
+
+.btn{
+    display:inline-block;
+    background:var(--primary);
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-right:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.secondary{
+    background:var(--secondary);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+    padding:60px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:var(--primary);
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+#about article{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-card{
+    background:white;
+    padding:20px 30px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.project-card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.project-card p{
+    margin-bottom:15px;
+}
+
+.project-card a{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:bold;
+}
+
+.project-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+form div{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    background:var(--primary);
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:var(--secondary);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.social-icons{
+    margin-top:15px;
+}
+
+.social-icons a{
+    color:white;
+    font-size:24px;
+    margin:0 10px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#60a5fa;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:768px){
+
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.projects-container{
+    justify-content:center;
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:480px){
+
+.hero-text h1{
+    font-size:32px;
+}
+
+.hero-image img{
+    width:200px;
+}
+
+.nav-links{
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.project-card{
+    width:100%;
+}
+
+.skill-card{
+    width:100%;
+    text-align:center;
+}
+
+.btn{
+    display:block;
+    margin-bottom:10px;
+}
+
+}
