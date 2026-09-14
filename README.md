@@ -1,6 +1,6 @@
 # Screen Recording of Portfolio Website (Drive Link)
 
-[Screen Recording Link](https://drive.google.com/file/d/1sCbTvWKSSbW-LZAm3uCovKypLlp_8QhD/view?usp=drive_link)
+[Screen Recording Link](https://drive.google.com/drive/folders/1fBAGz_164LP1uDCwmgGywyP-iVwxPeKg?usp=sharing)
 
 # Personal Portfolio Website with Express Backend
 
